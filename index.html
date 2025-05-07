@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header, .footer {
+            position: fixed;
+            width: 100%;
+            left: 0;
+            z-index: 10;
+        }
+
+        .header {
+            top: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            bottom: 0;
+        }
+
+        .content {
+            margin-top: 100px; /* Adjust based on header height */
+            margin-bottom: 100px; /* Adjust based on footer height */
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="header.png" alt="Header">
+    </div>
+    <div class="content">
+        <img src="content.png" alt="Content">
+    </div>
+    <div class="footer">
+        <img src="footer.png" alt="Footer">
+    </div>
+</body>
+</html>
